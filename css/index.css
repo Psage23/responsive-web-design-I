@@ -1,3 +1,373 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+ /* http://meyerweb.com/eric/tools/css/reset/ v2.020110126 License: none (public domain)*/
+                                                                                
+ html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+display: block;
+}
 
+body {
+line-height: 1;
+}
+
+ol,
+ul {
+list-style: none;
+}
+
+blockquote,
+q {
+quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+content: '';
+content: none;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+height: 100%;
+font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+font-family: 'Bangers', cursive;
+letter-spacing: 1px;
+margin-bottom: 15px;
+}
+/* Your code starts here! */
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	border: 2px solid black;
+	}
+
+/* tablet size*/
+@media (max-width: 800px){
+	/*body {
+		background-color: green;
+	}*/
+
+	nav div {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;	
+	}
+	
+	nav div ul {
+		width: 100%;
+		margin: 5% 0;
+	}
+
+	.round {
+		display: none;
+	}
+}
+
+/* phone size*/
+@media (max-width: 500px){
+	/*body {
+		background-color: blueviolet;
+	}*/
+
+	nav div {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	nav div ul {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		justify-content: space-evenly;
+		border-top: 1px solid grey;
+	}	
+
+	nav div ul li {
+		padding: 3% 0;
+		width: 100%;
+		text-align: center;
+		/*border-bottom: 1px solid grey;*/
+		border-bottom: 1px solid grey;
+	}
+
+	.logo {
+		padding: 2% 0;
+	}
+
+	.round {
+		display: none;
+	}
+
+	.twoColumns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.features {
+		padding: 3% 0;
+	}
+
+	.about {
+		padding: 3% 0;
+	}
+
+	.middle-img {
+		width: auto;
+		height: auto;
+	}
+
+	.threeColumns {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.threeColumns div {
+		margin: 2% 0;
+	}
+	
+} /*end of phone size*/
+
+/* this is the start of Header*/
+nav {
+	padding: 2% 0 2% 0;
+	font-size: 20px;
+}
+
+nav div {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	width: 70%;
+}
+	nav a {
+	text-decoration: none;
+	color: grey;
+	}
+
+	.logo {
+	width: 100%;
+
+	}
+/*this is the close of Header*/
+
+	.title {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 0 0 5% 0;
+	/*align-items: space-between;*/
+    /*padding: 10px;*/
+    /*margin: 0 20px;*/
+	}
+/* this section needs to be aligned and image aligned right*/
+	/*.title div {
+		width: 50%;
+	}*/
+	
+	.statement h1 {
+	text-align: center;
+	font-size: 80px;
+	/*padding: 50px;*/
+	}
+	
+	.statement button {
+	background-color: white;
+    padding: 2% 15%;
+	border: 1px solid black;
+	font-size: 25%;
+	text-align: center;
+	}
+
+	.round {
+		padding: 0 2%;
+	}
+	
+	.twoColumns {
+		display: flex;
+		justify-content: space-evenly;
+		align-content: center;
+        padding: 30px 0;
+        margin: 0 20px;
+	}
+	
+	.middle-img {
+		width: 97%;
+        height: auto;
+        margin: 0 1%;
+		
+	}
+	
+	.threeColumns {
+		border-bottom: 1px solid black;
+        padding: 50px 0 50px;
+        margin: 0 1%;
+		display: flex;
+		/*font-size: 20px;*/
+		/*flex-direction: row;*/
+		/*align-content: space-around;*/
+	}
+
+	.threeColumns div {
+		/*width: 33%;*/
+		padding: 0 10px;
+	}
+	
+	/*.services {
+		padding: 10px;
+	}*/
+	
+	footer {
+    padding: 20px 0;
+    margin: 0 20px;
+	text-align: left;
+	}
+	
+	.address {
+	font-size: 15px;
+	padding: 10px;
+	text-align: left;
+	}
+	
+	.address p {
+	padding: 10px 0;
+	text-align: left;
+	}
+	
+	.copyright {
+	text-align: center;
+	padding: 10 0;
+	}
