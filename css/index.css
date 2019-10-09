@@ -254,7 +254,7 @@ margin-bottom: 15px;
 
 /* this is the start of Header*/
 nav {
-	padding: 10% 0;
+	padding: 2% 0 2% 0;
 	font-size: 20px;
 }
 
@@ -278,7 +278,8 @@ nav ul {
 	}
 
 	.logo {
-	width: 20%;
+	width: 100%;
+
 	}
 /*this is the close of Header*/
 
